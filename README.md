@@ -19,7 +19,7 @@ const router = new KoaRouter();
 router.get("/items/",
   authenticate,
   caseof( "user.type", {
-    Admin: itemController.getAll
+    Admin: itemController.getAll,
     User:  itemController.getAllBelongingToUser
   }))
 
