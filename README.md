@@ -1,6 +1,8 @@
 
 # koa-caseof
 
+Koa Middleware for handling branching routes based on Context
+
 ### Install
 ```bash
 npm i @piing/koa-caseof
