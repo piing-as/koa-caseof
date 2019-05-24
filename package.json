@@ -1,10 +1,11 @@
 {
   "name": "@piing/koa-caseof",
   "private": false,
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Koa Middleware for handling branching routes based on property in Context",
   "main": "./distro/caseof.js",
   "typings": "./distro/caseof.d.ts",
+  "keywords": ["koa", "koa2", "middleware", "nodejs", "server", "router"],
   "scripts": {
     "test": "mocha --require ts-node/register ./**/*.test.ts --exit",
     "build": "tsc -d",
@@ -13,7 +14,11 @@
     "prebuild": "npm audit && npm run clean",
     "postbuild": "npm run test"
   },
-  "author": "",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/piing-as/koa-caseof.git"
+  },
+  "author": "Jørn Andre Tangen @gorillatron",
   "license": "ISC",
   "dependencies": {
     "@types/koa": "^2.0.48",
