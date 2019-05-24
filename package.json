@@ -1,0 +1,28 @@
+{
+  "name": "@piing/koa-caseof",
+  "private": false,
+  "version": "1.0.0",
+  "description": "",
+  "main": "./distro/caseof.js",
+  "typings": "./distro/caseof.d.ts",
+  "scripts": {
+    "test": "mocha --require ts-node/register ./**/*.test.ts --exit",
+    "build": "tsc -d",
+    "clean": "rm -rf ./distro",
+    "prepublish": "npm run build", 
+    "prebuild": "npm audit && npm run clean",
+    "postbuild": "npm run test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/lodash.get": "^4.4.6",
+    "@types/mocha": "^5.2.6",
+    "koa": "^2.7.0",
+    "lodash.get": "^4.4.2",
+    "mocha": "^6.1.4",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  }
+}
