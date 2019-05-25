@@ -3,6 +3,5 @@ data
 .DS_Store
 coverage
 doc
-distro
 *.wal
 *.db

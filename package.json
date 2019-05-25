@@ -1,7 +1,7 @@
 {
   "name": "@piing/koa-caseof",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Koa Middleware for handling branching routes based on property in Context",
   "main": "./distro/caseof.js",
   "typings": "./distro/caseof.d.ts",
